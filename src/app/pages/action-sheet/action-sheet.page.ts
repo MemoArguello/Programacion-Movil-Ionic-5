@@ -21,22 +21,22 @@ export class ActionSheetPage implements OnInit {
           role: 'destructive',
           data: {
             action: 'delete',
-          },
+          }
         },
         {
           text: 'Share',
           data: {
             action: 'share',
-          },
+          }
         },
         {
           text: 'Cancel',
           role: 'cancel',
           data: {
-            action: 'cancel',
-          },
-        },
-      ],
+            action: 'cancel'
+        }
+      }
+      ]
     });
 
     await actionSheet.present();

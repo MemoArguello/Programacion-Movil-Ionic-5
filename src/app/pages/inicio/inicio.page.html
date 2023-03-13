@@ -1,30 +1,42 @@
 <ion-header>
   <ion-toolbar>
     <ion-title color="primary">Componentes</ion-title>
+    <ion-list>
+      <ion-item *ngFor="let c of componentes"
+                [routerLink]="c.redirectTo" detail>
+        <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
+        <ion-label>  {{ c.name }}</ion-label>
+      </ion-item>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-list>
-    <ion-item *ngFor="let c of componentes"
-              [routerLink]="c.redirectTo"
-              detail>
-      <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
-      {{ c.name }}
-    </ion-item>
-  </ion-list>
-
-
-<!-- 
-  <ion-button routerLink="/alert">
-    Alert
-  </ion-button>
-
 
   <ion-button routerLink="/action-sheet">
-    Action Sheet
-  </ion-button> -->
+    <ion-icon color="light" slot="start" name="apps-outline"></ion-icon>
+    Hoja de accion
+  </ion-button>
 
-
+  <ion-button routerLink="/alert">
+    <ion-icon color="light" slot="start" name="alert-circle-outline"></ion-icon>
+    Alerta
+  </ion-button>
+  <ion-button routerLink="/avatar">
+    <ion-icon color="light" slot="start" name="person-circle-outline"></ion-icon>
+    Avatar
+  </ion-button>
+  <ion-button routerLink="/botones">
+    <ion-icon color="light" slot="start" name="play-outline"></ion-icon> 
+    Botones
+  </ion-button>
+  <ion-button routerLink="/card">
+    <ion-icon color="light" slot="start" name="card-outline"></ion-icon>
+    Card
+  </ion-button>
+  <ion-button routerLink="/check">
+    <ion-icon color="light" slot="start" name="list"></ion-icon>
+    Check
+  </ion-button>
 </ion-content>

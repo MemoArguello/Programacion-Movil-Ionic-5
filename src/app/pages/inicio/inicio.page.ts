@@ -16,14 +16,39 @@ export class InicioPage implements OnInit {
 
   componentes: Componente[] = [
     {
-      icon: 'american-football-outline',
+      icon: 'apps',
       name: 'Action Sheet',
       redirectTo: '/action-sheet'
     },
     {
-      icon: 'logo-apple-appstore',
+      icon: 'earth',
       name: 'Alert',
       redirectTo: '/alert'
+    },
+    {
+      icon: 'earth',
+      name: 'Avatar',
+      redirectTo: '/avatar'
+    },
+    {
+      icon: 'grid',
+      name: 'botones',
+      redirectTo: '/botones'
+    },
+    {
+      icon: 'card',
+      name: 'card',
+      redirectTo: '/card'
+    },
+    {
+      icon: 'list',
+      name: 'check',
+      redirectTo: '/check'
+    },
+    {
+      icon: 'calendar',
+      name: 'DateTime',
+      redirectTo: '/data-time'
     }
   ];
 
@@ -32,5 +57,7 @@ export class InicioPage implements OnInit {
 
   ngOnInit() {
   }
-
 }
+
+
+
