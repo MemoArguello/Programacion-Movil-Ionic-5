@@ -1,0 +1,29 @@
+<app-header titulo="Gird Row"></app-header>
+
+<ion-content padding fullscreen>
+
+  <ion-grid fixed>
+    <!--<ion-row>
+            <ion-col *ngFor="let c of [1,1,1,1,1,1,1,1,1]; let i = index">
+                Hola, item {{ i + 1 }}
+            </ion-col>
+        </ion-row>-->
+
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12" *ngFor="let c of [1,1,1,1,1,1,1,1,1];">
+
+        <ion-card>
+          <ion-img src="../../../assets/isla-paraiso.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-subtitle>Destinos</ion-card-subtitle>
+            <ion-card-title>Isla Paraiso</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Cabaña alta, playas de arenas blancas, el Paraná cristalino como nunca, cancha de volley o fútbol de playa,
+            abundante sombra y la tranquilidad única del sitio que por ese motivo le da su nombre.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
